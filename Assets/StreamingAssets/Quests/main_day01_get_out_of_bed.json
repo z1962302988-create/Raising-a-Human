@@ -1,0 +1,75 @@
+{
+  "id": "main_day01_get_out_of_bed",
+  "day": 1,
+  "title": "它为什么不肯起床？",
+  "locationId": "apartment",
+  "humanId": "H-071",
+  "designIntent": "教玩家先观察、再干预，并理解照顾不等于催促。",
+  "stages": [
+    {"id": "observe", "title": "观察人类", "completionEvent": "three_unique_observations"},
+    {"id": "community", "title": "进入猫咪社区", "completionEvent": "advice_bookmarked"},
+    {"id": "intervene", "title": "第一次环境干预", "completionEvent": "first_intervention_done"},
+    {"id": "shop", "title": "第一次进入商店", "completionEvent": "item_purchased"},
+    {"id": "decorate", "title": "第一次装修", "completionEvent": "usable_area_created"},
+    {"id": "autonomous_response", "title": "人类自主反应", "completionEvent": "human_left_bed_voluntarily"},
+    {"id": "ending", "title": "第一天结尾", "completionEvent": "ending_choice_saved"}
+  ],
+  "initialStats": [
+    {"id": "hunger", "value": 35},
+    {"id": "fatigue", "value": 40},
+    {"id": "stress", "value": 55},
+    {"id": "safety", "value": 20},
+    {"id": "wellbeing", "value": 12},
+    {"id": "trust", "value": 5}
+  ],
+  "objectives": [
+    {"id": "observe_three_unique", "text": "完成三次不同的行为观察", "target": 3},
+    {"id": "view_forum_post", "text": "查看一次社区求助帖", "target": 1},
+    {"id": "buy_item", "text": "购买至少一件商品", "target": 1},
+    {"id": "place_furniture", "text": "完成一次房间布置", "target": 1},
+    {"id": "human_leaves_bed", "text": "让人类主动离开床铺", "target": 1},
+    {"id": "wellbeing_20", "text": "将幸福指数提升至20", "target": 20}
+  ],
+  "hiddenObjectives": [
+    {"id": "quiet_observer", "text": "强行打扰不超过两次", "target": 2},
+    {"id": "discover_light", "text": "发现光照是关键条件", "target": 1},
+    {"id": "photo_and_post", "text": "拍摄第一次使用家具的照片并发帖", "target": 1},
+    {"id": "use_cardboard_seat", "text": "使用纸箱形成活动位置", "target": 1}
+  ],
+  "observationPoints": [
+    {"id": "human", "text": "人类醒着，却维持睡眠姿势。原因仍不确定。", "clueId": ""},
+    {"id": "phone", "text": "人类已检查发光方块六次，未发现从中获得食物。", "clueId": "phone_attachment"},
+    {"id": "curtain", "text": "窗帘完全遮光，房间仍处于适合夜间活动的状态。", "clueId": "insufficient_light"},
+    {"id": "empty_desk", "text": "桌子缺少可坐下使用的物体。", "clueId": "missing_activity_area"}
+  ],
+  "interventions": [
+    {"id": "open_curtain", "text": "拉开窗帘", "effects": [{"statId": "wellbeing", "amount": 3}], "clueId": "noticed_sunlight"},
+    {"id": "call_repeatedly", "text": "反复叫醒人类", "effects": [{"statId": "stress", "amount": 5}, {"statId": "trust", "amount": -2}], "clueId": ""},
+    {"id": "food_by_bed", "text": "把食物放到床边", "effects": [{"statId": "hunger", "amount": -5}], "clueId": "food_not_enough"},
+    {"id": "unplug_phone", "text": "关闭手机充电", "effects": [{"statId": "trust", "amount": -3}], "clueId": "phone_is_important"}
+  ],
+  "shopItems": [
+    {"id": "wooden_chair", "name": "木制椅子", "price": 60, "recommended": true},
+    {"id": "soft_cushion", "name": "柔软抱枕", "price": 40, "recommended": false},
+    {"id": "night_light", "name": "小夜灯", "price": 50, "recommended": false},
+    {"id": "green_plant", "name": "绿色植物", "price": 70, "recommended": false}
+  ],
+  "successConditions": ["curtain_open", "usable_area_by_desk"],
+  "completionRewards": [
+    {"id": "cat_coins", "amount": 80},
+    {"id": "research_points", "amount": 10}
+  ],
+  "hiddenRewards": [
+    {"objectiveId": "quiet_observer", "rewardId": "title_quiet_observer", "amount": 1},
+    {"objectiveId": "photo_and_post", "rewardId": "dried_fish", "amount": 1},
+    {"objectiveId": "use_cardboard_seat", "rewardId": "cat_coins_refund", "amount": 20}
+  ],
+  "unlocks": ["shop_human_life_goods", "forum_new_caretakers", "codex_staying_in_bed"],
+  "endingChoices": [
+    {"id": "soft_meow", "text": "轻轻叫一声", "effects": [{"statId": "trust", "amount": 1}]},
+    {"id": "jump_on_desk", "text": "跳到桌子上", "effects": [{"statId": "closeness", "amount": 1}, {"statId": "interruption", "amount": 1}]},
+    {"id": "pretend_not_watching", "text": "转身假装没有观察", "effects": [{"statId": "space_respected", "amount": 1}]},
+    {"id": "paw_near_hand", "text": "把爪子放在人类手边", "effects": [{"statId": "trust", "amount": 2}]}
+  ],
+  "nextQuestPreview": "它已经盯着手机很久了。"
+}
