@@ -1,0 +1,48 @@
+{
+  "gameTitle": "饲养一只人类",
+  "era": "人类大停摆后的猫咪文明",
+  "premise": "猫咪接管旧人类城市，并通过共居照护帮助人类重新建立生活。",
+  "careRelationship": {
+    "officialName": "猫人共居照护关系",
+    "commonName": "养人",
+    "legalPrinciple": "人类不是猫咪的财产；恢复独立生活能力后拥有离开的权利。"
+  },
+  "player": {
+    "role": "刚通过初级人类饲养资格考试的新手猫咪",
+    "startingResources": ["旧人类公寓", "喵联网手机", "少量猫币", "未完成的人类观察手册", "年轻人类 H-071"],
+    "goal": "帮助人类重新拥有选择生活的能力，而不是命令或修复它。"
+  },
+  "emotionEcology": {
+    "phenomenon": "人类情绪会改变周围空间",
+    "positiveEffects": ["光线明亮", "房间温暖", "植物更易生长"],
+    "negativeSubstance": "心绪尘埃",
+    "negativeEffects": ["灯光变暗", "物品堆积", "门窗沉重", "钟表变慢", "家具褪色", "角落出现阴影"]
+  },
+  "wellbeing": {
+    "displayName": "幸福指数",
+    "worldTerm": "幸福波动",
+    "dimensions": ["安全", "休息", "自主", "被理解", "未来期待"],
+    "warning": "指数不是当下快乐程度，也不能完整定义一个人。"
+  },
+  "city": {
+    "name": "软垫城",
+    "districts": [
+      {"id": "apartment", "name": "共居公寓", "purpose": "居住、装修与主要互动"},
+      {"id": "paw_home", "name": "爪爪家居", "purpose": "基础家具与装饰"},
+      {"id": "human_goods", "name": "人类用品研究店", "purpose": "复杂的人类用品"},
+      {"id": "second_tail", "name": "二手尾巴市场", "purpose": "旧家具和故事物品交易"},
+      {"id": "observatory", "name": "两脚兽观察所", "purpose": "登记、资格和行为研究"},
+      {"id": "community", "name": "猫咪社区中心", "purpose": "比赛、讨论和经验交流"},
+      {"id": "old_city", "name": "旧人类城区", "purpose": "探索旧物、记忆与主线故事"}
+    ]
+  },
+  "community": {
+    "network": "喵联网",
+    "forum": "两脚兽观察与饲养交流所",
+    "activities": ["行为记录", "装修分享", "饲养问答", "传言验证", "家具交换"],
+    "sampleMisinformation": ["人类盯手机是在补充精神能量", "买很多书会自动变聪明", "房间里有跑步机就会运动"]
+  },
+  "mainConflict": "标准化的完美人类房间与理解个体真实需求之间的冲突。",
+  "themes": ["照顾不等于控制", "幸福意味着重新拥有选择", "陪伴", "失去", "成长"],
+  "tone": ["温馨", "荒诞", "轻松", "孤独", "生活感", "淡淡忧伤", "希望"]
+}

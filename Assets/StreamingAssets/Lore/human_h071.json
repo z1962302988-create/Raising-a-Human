@@ -1,0 +1,42 @@
+{
+  "identity": {
+    "id": "H-071",
+    "type": "成年人类",
+    "initialStatus": "低响应、低活动、拒绝接受标准照护",
+    "conditionName": "生活停摆"
+  },
+  "initialBehaviors": ["长时间躺床", "反复查看手机", "很少主动进食", "拒绝打开窗帘", "不愿出门", "收到消息不回复", "有人靠近时假装睡着", "坐在桌前却无所事事", "隐藏旧门卡"],
+  "history": {
+    "formerEmployer": "人类幸福管理局",
+    "formerRole": "标准化居住环境设计人员",
+    "responsibility": "依据幸福指数制定房间、睡眠、社交、工作与强制干预方案。",
+    "wound": "曾以照顾之名控制亲近的人，导致对方脱离监测系统；从此不再相信自己的决定。"
+  },
+  "coreConflict": "想重新生活，却害怕自己的选择再次伤害别人。",
+  "meterTriggers": [
+    {"threshold": 30, "reaction": "遮住房间里的检测装置"},
+    {"threshold": 45, "reaction": "主动移走增加幸福值的家具"},
+    {"threshold": 60, "reaction": "可能砸坏一次幸福指数显示器"}
+  ],
+  "clues": [
+    {"id": "keycard", "name": "被藏起来的门卡", "meaning": "属于人类幸福管理局"},
+    {"id": "photo", "name": "被撕掉一半的合照", "meaning": "另一半人物是离开系统的旧友"},
+    {"id": "blueprint", "name": "旧房间设计图", "meaning": "与标准幸福房间完全一致"},
+    {"id": "unsent_message", "name": "没有发送的消息", "meaning": "它已意识到自己从未询问对方想要什么"},
+    {"id": "blocker", "name": "幸福指数屏蔽器", "meaning": "它在主动拒绝被系统读取"}
+  ],
+  "furniturePreferences": {
+    "stressTags": ["标准化", "纯白", "智能监测", "管理局风格"],
+    "comfortTags": ["旧物", "有使用痕迹", "不成套", "暖光", "可自行调整"],
+    "designRule": "允许表达不喜欢和主动移动家具，应被视为自主性恢复。"
+  },
+  "growthStages": [
+    {"id": 1, "name": "被动生存", "goal": "愿意吃饭、起床和使用房间"},
+    {"id": 2, "name": "表达拒绝", "goal": "主动表达个人偏好"},
+    {"id": 3, "name": "重新选择", "goal": "移动家具、购买物品和安排生活"},
+    {"id": 4, "name": "面对过去", "goal": "讲述管理局与旧友的故事"},
+    {"id": 5, "name": "离开房间", "goal": "走出公寓并决定自己的下一步"}
+  ],
+  "finalTruth": "旧友住在不受幸福指数监测的旧城区；H-071 必须接受犯过错误不等于失去建立关系的资格。",
+  "playerLesson": "不能替它决定什么是幸福，只能提供一个允许它重新选择的地方。"
+}
